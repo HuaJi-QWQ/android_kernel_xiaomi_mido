@@ -2753,7 +2753,6 @@ extern int alloc_related_thread_groups(void);
 
 extern unsigned long all_cluster_ids[];
 
-extern void check_for_migration(struct rq *rq, struct task_struct *p);
 
 static inline int is_reserved(int cpu)
 {
@@ -2853,8 +2852,6 @@ static inline bool task_sched_boost(struct task_struct *p)
 {
 	return true;
 }
-
-static inline void check_for_migration(struct rq *rq, struct task_struct *p) { }
 
 static inline bool hmp_capable(void) { return false; }
 static inline bool is_max_capacity_cpu(int cpu) { return true; }
