@@ -35,6 +35,7 @@ obj-$(CONFIG_CPU_FREQ_GOV_ELECTROUTIL) += cpufreq_electroutil.o
 obj-$(CONFIG_CPU_FREQ_GOV_SMURFUTIL) += cpufreq_smurfutil.o
 obj-$(CONFIG_CPU_FREQ_GOV_SMURFUTIL_FLEX) += cpufreq_smurfutil_flex.o
 obj-$(CONFIG_CPU_FREQ_GOV_PIXEL_SMURFUTIL) += cpufreq_pixel_smurfutil.o
+obj-$(CONFIG_CPU_FREQ_GOV_WALT) += cpufreq_walt.o
 obj-$(CONFIG_SCHED_CORE_CTL) += core_ctl.o
 obj-$(CONFIG_PSI) += psi.o
 obj-$(CONFIG_CPU_FREQ_GOV_ENERGY_DCFC) += cpufreq_energy_dcfc.o
