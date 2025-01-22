@@ -861,7 +861,7 @@ static void xhci_kill_endpoint_urbs(struct xhci_hcd *xhci,
 	struct xhci_virt_ep *ep;
 	struct xhci_ring *ring;
 
-	ep = xhci_get_virt_ep(xhci, slot_id, ep_index);
+	/*ep = xhci_get_virt_ep(xhci, slot_id, ep_index);*/
 	if (!ep)
 		return;
 

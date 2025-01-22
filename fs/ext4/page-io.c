@@ -500,7 +500,7 @@ int ext4_bio_write_page(struct ext4_io_submit *io,
 			continue;
 		if (bounce_page)
 			io->io_flags |= EXT4_IO_ENCRYPTED;
-		ret = io_submit_add_bh(io, inode, page, data_page, bh);
+		ret = io_submit_add_bh(io, inode, page, bounce_page, bh);
 		if (ret) {
 			/*
 			 * We only get here on ENOMEM.  Not much else

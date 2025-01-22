@@ -1327,7 +1327,7 @@ static int ext4_xattr_move_to_block(handle_t *handle, struct inode *inode,
 	is->iloc.bh = NULL;
 	bs->bh = NULL;
 
-	buffer = kvmalloc(value_size, GFP_NOFS);
+	/*buffer = kvmalloc(value_size, GFP_NOFS);*/
 	if (!buffer) {
 		error = -ENOMEM;
 		goto out;

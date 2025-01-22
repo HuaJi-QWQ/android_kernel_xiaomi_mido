@@ -5123,7 +5123,7 @@ static int __build_all_zonelists(void *data)
 	 * tty_insert_flip_string_and_push_buffer() on other CPU might be
 	 * calling kmalloc(GFP_ATOMIC | __GFP_NOWARN) with port->lock held.
 	 */
-	printk_deferred_enter();
+	/*printk_deferred_enter();*/
 #ifdef CONFIG_NUMA
 	memset(node_load, 0, sizeof(node_load));
 #endif
@@ -5168,7 +5168,7 @@ static int __build_all_zonelists(void *data)
 #endif
 	}
 
-	printk_deferred_exit();
+	/*printk_deferred_exit();*/
 	local_irq_restore(flags);
 	return 0;
 }
